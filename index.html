@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+        .invitation {
+            background-color: #fff;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .balloons {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .rsvp {
+            margin-top: 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            color: #ff69b4;
+            text-decoration: underline;
+        }
+        .rsvp:hover {
+            color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+<div class="invitation">
+    <h1>🎉 Vatsala Tiwari's 27th Birthday Bash! 🎂</h1>
+    <p><strong>Date:</strong> 19th October</p>
+    <p><strong>Time:</strong> 7 PM</p>
+    <p><strong>Venue:</strong> 30 River Ct, APT 2908, Jersey City</p>
+    <p>Come join us for a night of fun, laughter, and celebration as we mark Vatsala's special day (It's on October 23rd! :P)</p>
+    <p>Bring your party spirit and let's make this a birthday to remember!</p>
+    
+    <div class="balloons">
+
+        <img src="https://freepngimg.com/download/balloon/26-balloon-png-image.png" alt="Balloons" width="180">
+    </div>
+
+    <div class="rsvp" onclick="alert('Thanks for RSVPing! Confirm by texting Ankit at 201-912-3174. Can\'t wait to see you!')">RSVP Here!</div>
+</div>
+
+</body>
+</html>
